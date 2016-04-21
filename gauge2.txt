@@ -1,0 +1,292 @@
+﻿[{
+	"drawType": "layer",
+	"startAngle": 245,
+	"angleRange": 50,
+	"minValue": 0,
+	"valueRange": 100,
+	"scaleCount": 3,
+	"rect": {
+		"x": -22,
+		"y": 33,
+		"width": 65,
+		"height": 65
+	},
+	"item": [{
+		"drawType": "cap",
+		"style": 0,
+		"radius": 6,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgb(128,128,128)",
+			"color2": "rgb(105,105,105)",
+			"gradientStyle": "gs4"
+		}
+	},
+	{
+		"drawType": "needle",
+		"style": 0,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "red",
+			"color2": "white",
+			"gradientStyle": "gs1"
+		},
+		"width": 6,
+		"len": 40,
+		"radius": 40
+	},
+	{
+		"drawType": "scaleText",
+		"style": 1,
+		"name": "Tahoma",
+		"color": "black",
+		"isBold": false,
+		"decimals": 0,
+		"radius": 37,
+		"size": 7
+	},
+	{
+		"drawType": "scale",
+		"style": 0,
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgba(255,255,255,0.5)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "solid"
+		},
+		"isSubScale": true,
+		"width": 1.5,
+		"radius": 40,
+		"len": 4,
+		"subCount": 3
+	},
+	{
+		"drawType": "scale",
+		"style": 0,
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(255,255,255,0.5)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgb(65,140,240)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "solid"
+		},
+		"isSubScale": false,
+		"width": 3,
+		"radius": 40,
+		"len": 6,
+		"subCount": 3
+	},
+	{
+		"drawType": "scaleBack",
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgba(255,255,255,0.31)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "gs1"
+		},
+		"width": 2,
+		"radius": 40
+	}]
+},
+{
+	"drawType": "layer",
+	"startAngle": 90,
+	"angleRange": 180,
+	"minValue": 0,
+	"valueRange": 100,
+	"scaleCount": 11,
+	"rect": {
+		"x": 1.6,
+		"y": 43,
+		"width": 45,
+		"height": 45
+	},
+	"item": [{
+		"drawType": "back",
+		"style": 2,
+		"edgeLine": {
+			"color": "black",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgb(105,105,105)",
+			"color2": "rgb(128,128,128)",
+			"gradientStyle": "gs4"
+		},
+		"edgeColor": {
+			"color1": "rgb(105,105,105)",
+			"color2": "rgb(80,80,80)",
+			"gradientStyle": "gs4"
+		},
+		"edgeWidth": 4
+	}]
+},
+{
+	"drawType": "layer",
+	"startAngle": 155,
+	"angleRange": 50,
+	"minValue": 0,
+	"valueRange": 100,
+	"scaleCount": 3,
+	"rect": {
+		"x": -2,
+		"y": 12,
+		"width": 120,
+		"height": 120
+	},
+	"item": [{
+		"drawType": "cap",
+		"style": 0,
+		"radius": 6,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgb(128,128,128)",
+			"color2": "rgb(105,105,105)",
+			"gradientStyle": "gs4"
+		}
+	},
+	{
+		"drawType": "needle",
+		"style": 0,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "red",
+			"color2": "white",
+			"gradientStyle": "gs1"
+		},
+		"width": 6,
+		"len": 40,
+		"radius": 40
+	},
+	{
+		"drawType": "scaleText",
+		"style": 1,
+		"name": "Tahoma",
+		"color": "black",
+		"isBold": false,
+		"decimals": 0,
+		"radius": 37,
+		"size": 7
+	},
+	{
+		"drawType": "scale",
+		"style": 0,
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgba(255,255,255,0.5)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "solid"
+		},
+		"isSubScale": true,
+		"width": 1.5,
+		"radius": 40,
+		"len": 4,
+		"subCount": 3
+	},
+	{
+		"drawType": "scale",
+		"style": 0,
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(255,255,255,0.5)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgb(65,140,240)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "solid"
+		},
+		"isSubScale": false,
+		"width": 3,
+		"radius": 40,
+		"len": 6,
+		"subCount": 3
+	},
+	{
+		"drawType": "scaleBack",
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgba(255,255,255,0.31)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "gs1"
+		},
+		"width": 2,
+		"radius": 40
+	}]
+},
+{
+	"drawType": "layer",
+	"startAngle": 90,
+	"angleRange": 180,
+	"minValue": 0,
+	"valueRange": 100,
+	"scaleCount": 11,
+	"rect": {
+		"x": 18,
+		"y": 8,
+		"width": 80,
+		"height": 80
+	},
+	"item": [{
+		"drawType": "back",
+		"style": 2,
+		"edgeLine": {
+			"color": "black",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgb(105,105,105)",
+			"color2": "rgb(128,128,128)",
+			"gradientStyle": "gs4"
+		},
+		"edgeColor": {
+			"color1": "rgb(105,105,105)",
+			"color2": "rgb(80,80,80)",
+			"gradientStyle": "gs4"
+		},
+		"edgeWidth": 4
+	}]
+}]

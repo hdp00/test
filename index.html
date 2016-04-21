@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+
+    <style type="text/css">
+        input[type="button"] {
+            width: 200px;
+            height: 60px;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        <br />
+        <br />
+    </p>
+    <p class="center">
+        <input id="ButtonNext" type="button" value="切换" />
+        <input id="ButtonEdit" type="button" value="编辑" />
+        <input id="ButtonRefresh" type="button" value="刷新"  style="display:none" />     
+    </p>
+    <p>
+        <canvas id="myCanvas" width="650" height="650" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+        <textarea id="TextArea1" rows="40" cols="80" style="display:none"></textarea>
+    </p>
+
+        <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+        <script src="Gauge.js"></script>
+
+        <script>
+            function drawGauge() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                gauge.draw();
+                gauge.resetValue();
+                requestAnimationFrame(drawGauge);
+            }
+            function refresh() {
+                var data = $("#TextArea1").val();
+                gauge.setData(eval('(' + data + ')'));
+            }
+            function loadGauge() {
+                $.get("gauge" + index + ".txt", function (data, status) {
+                    $("#TextArea1").val(data);
+                    refresh();
+                    index++;
+                    if (index >= 3)
+                        index = 0;
+                });
+            }
+
+            $("#ButtonEdit").click(function () {
+                $("#TextArea1").fadeToggle();
+                $("#ButtonRefresh").fadeToggle();
+            });
+            $("#ButtonRefresh").click(function () {
+                refresh();
+            });
+            $("#ButtonNext").click(function () {
+                loadGauge();
+            });
+
+            var canvas = document.getElementById("myCanvas");
+            var ctx = canvas.getContext("2d");
+            var gauge = new DrawGauge(ctx);
+
+            var index = 0;
+            gauge.initGauge();
+            var data = JSON.stringify(gauge.layers);
+            $("#TextArea1").val(data);
+            requestAnimationFrame(drawGauge);
+
+            //在本地会有异常
+            loadGauge();
+ 
+        </script>
+
+</body>
+</html>

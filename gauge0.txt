@@ -1,0 +1,150 @@
+﻿[{
+	"drawType": "layer",
+	"item": [{
+		"drawType": "cap",
+		"style": 0,
+		"radius": 6,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgb(245,245,245)",
+			"color2": "rgb(220,220,220)",
+			"gradientStyle": "gs4"
+		}
+	},
+	{
+		"drawType": "needle",
+		"style": 0,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.25)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "white",
+			"color2": "red",
+			"gradientStyle": "gs1"
+		},
+		"width": 7,
+		"len": 38,
+		"radius": 37
+	},
+	{
+		"drawType": "range",
+		"arrangement": 0,
+		"edgeLine": {
+			"color": "black",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "white",
+			"color2": "green",
+			"gradientStyle": "gs2"
+		},
+		"width": 5,
+		"radius": 25,
+		"minValue": 70,
+		"valueRange": 30
+	},
+	{
+		"drawType": "scaleText",
+		"style": 0,
+		"name": "Tahoma",
+		"color": "black",
+		"isBold": false,
+		"decimals": 0,
+		"radius": 33,
+		"size": 7
+	},
+	{
+		"drawType": "scale",
+		"style": 0,
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.31)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgba(65,140,240,0.5)",
+			"color2": "rgba(0,0,0,0.13)",
+			"gradientStyle": "gs4"
+		},
+		"isSubScale": true,
+		"width": 1,
+		"radius": 37,
+		"len": 4,
+		"subCount": 3
+	},
+	{
+		"drawType": "scale",
+		"style": 0,
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "rgba(0,0,0,0.31)",
+			"width": 1,
+			"lineStyle": "solid"
+		},
+		"backColor": {
+			"color1": "rgba(65,140,240,0.5)",
+			"color2": "rgba(0,0,0,0.13)",
+			"gradientStyle": "gs4"
+		},
+		"isSubScale": false,
+		"width": 3,
+		"radius": 37,
+		"len": 6,
+		"subCount": 3
+	},
+	{
+		"drawType": "scaleBack",
+		"arrangement": 1,
+		"edgeLine": {
+			"color": "black",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "rgba(0,0,0,0.18)",
+			"color2": "rgba(0,0,0,0.5)",
+			"gradientStyle": "solid"
+		},
+		"width": 2,
+		"radius": 37
+	},
+	{
+		"drawType": "back",
+		"style": 2,
+		"edgeLine": {
+			"color": "black",
+			"width": 1,
+			"lineStyle": "null"
+		},
+		"backColor": {
+			"color1": "white",
+			"color2": "white",
+			"gradientStyle": "gs4"
+		},
+		"edgeColor": {
+			"color1": "rgba(131,181,255,0.39)",
+			"color2": "rgba(0,81,191,0.39)",
+			"gradientStyle": "gs4"
+		},
+		"edgeWidth": 6.5
+	}],
+	"rect": {
+		"x": 3,
+		"y": 3,
+		"width": 94,
+		"height": 94
+	},
+	"startAngle": 30,
+	"angleRange": 300,
+	"minValue": 0,
+	"valueRange": 100,
+	"scaleCount": 6
+}]
