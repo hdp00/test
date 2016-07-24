@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <button>test</button>
+
+    <p>
+        <canvas id="myCanvas" width="800" height="800" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML5 canvas tag.
+        </canvas>
+    </p>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js"></script>
+    <script src="DashedLine.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                draw();
+                //test++;
+                // t--;
+                index++;
+            });
+        });
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.lineJoin = "round";
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 8;
+
+            var x1 = 300, y1 = 100;
+            var x2 = x1, y2 = y1 + 100;
+            var r = 50;
+            var xArc = x2 - r, yArc = y2;
+            var sAngle = 0, eAngle = Math.PI;
+            var x3 = x2 + r * 2 + 100, y3 = y2;
+            
+            ctx.beginPath();
+            ctx.moveTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.arc(xArc, yArc, r, sAngle, eAngle);
+            ctx.lineTo(x3, y3);
+            ctx.lineTo(x1, y1);
+            ctx.stroke();
+
+            lines = [];
+            lines.push(new Point(x1, y1));
+            lines.push(new Point(x2, y2));
+            arcLines = dashLine.fittinArc(xArc, yArc, r, sAngle, eAngle);
+            lines = lines.concat(arcLines);
+            lines.push(new Point(x3, y3));
+            lines.push(new Point(x1, y1));
+
+            ctx.strokeStyle = "yellow";
+            ctx.lineWidth = 6;
+            dashLine.flow();
+            dashLine.draw(lines);
+            requestAnimationFrame(draw);
+        }
+
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        var dashLine = new DashedLine(ctx);
+        draw();
+    </script>
+
+</body>
+</html>
