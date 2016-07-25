@@ -1,10 +1,5 @@
 ﻿//hdp 2016.07.24
 
-function Point(x, y) {
-    this.x = x;
-    this.y = y;
-}
-
 //流动虚线绘制
 function DashedLine(context) {
     this.ctx = context;
@@ -32,7 +27,7 @@ DashedLine.prototype.fittinArc = function (x, y, r, sAngle, eAngle) {
             angle = eAngle;
         var lineX = x + r * Math.cos(angle);
         var lineY = y + r * Math.sin(angle);
-        lines.push(new Point(lineX, lineY));
+        lines.push({x:lineX, y:lineY});
     }
 
     return lines;

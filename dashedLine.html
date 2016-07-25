@@ -48,12 +48,12 @@
             ctx.stroke();
 
             lines = [];
-            lines.push(new Point(x1, y1));
-            lines.push(new Point(x2, y2));
+            lines.push({x:x1, y:y1});
+            lines.push({x:x2, y:y2});
             arcLines = dashLine.fittinArc(xArc, yArc, r, sAngle, eAngle);
             lines = lines.concat(arcLines);
-            lines.push(new Point(x3, y3));
-            lines.push(new Point(x1, y1));
+            lines.push({x:x3, y:y3});
+            lines.push({x:x1, y:y1});
 
             ctx.strokeStyle = "yellow";
             ctx.lineWidth = 6;
