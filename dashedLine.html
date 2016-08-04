@@ -38,6 +38,10 @@
             var xArc = x2 - r, yArc = y2;
             var sAngle = 0, eAngle = Math.PI;
             var x3 = x2 + r * 2 + 100, y3 = y2;
+
+            ctx.beginPath();
+            ellipse(ctx, 400, 400, 100, 50);
+            ctx.stroke();
             
             ctx.beginPath();
             ctx.moveTo(x1, y1);

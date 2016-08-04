@@ -102,3 +102,19 @@ DashedLine.prototype.draw = function (lines) {
 
     ctx.stroke();
 }
+
+//椭圆
+function ellipse(ctx, x, y, w, h) {
+	console.log(this);
+
+	var k = 0.5522847;
+	ox = w * k;
+	oy = h * k;
+
+	ctx.moveTo(x + w, y);
+	ctx.bezierCurveTo(x + w, y + oy, x + ox, y + h, x, y + h);
+	ctx.bezierCurveTo(x - ox, y + h, x - w, y + oy, x - w, y);
+	ctx.bezierCurveTo(x - w, y - oy, x - ox, y - h, x, y - h);
+	ctx.bezierCurveTo(x + ox, y - h, x + w, y - oy, x + w, y);
+}
+
